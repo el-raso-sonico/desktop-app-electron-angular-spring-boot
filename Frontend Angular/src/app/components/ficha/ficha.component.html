@@ -1,0 +1,61 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Formulario</h4>
+                        <p class="card-category">Información Básica</p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Primer Nombre" [(ngModel)]=ficha.nombre_1
+                                            name="nombre1">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Segundo Nombre" [(ngModel)]=ficha.nombre_2
+                                            name="nombre2">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Primer Apellido" [(ngModel)]=ficha.apellido_1
+                                            name="apellido1">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Segundo Apellido" [(ngModel)]=ficha.apellido_2
+                                            name="apellido2">
+                                    </mat-form-field>
+                                </div>
+                                <div class="col-md-4">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Cédula" type="text" [(ngModel)]=ficha.cedula
+                                            name="cedula">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-md-5"></div>
+                                <button class="col col-md-2" mat-raised-button class="btn btn-success"
+                                    (click)="generarFicha()">Generar
+                                    Documento</button>
+                                <div class="col col-md-5"></div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
