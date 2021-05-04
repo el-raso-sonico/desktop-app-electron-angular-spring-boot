@@ -1,0 +1,55 @@
+{
+  "name": "desktop-app",
+  "productName": "Desktop App",
+  "version": "1.0.0",
+  "description": "Aplicación de escritorio con Ángular, Electron  y Spring Boot como Servicio de Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir  --ia32",
+    "dist": "electron-builder  --ia32"
+  },
+  "keywords": [
+    "Desktop",
+    "App",
+    "Ángular",
+    "Spring",
+    "Boot",
+    "Servicio Windows",
+    "Aplicacion"
+  ],
+  "author": "El Raso Sonico",
+  "license": "CC0-1.0",
+  "build": {
+    "appId": "id-app-electron-sprint-desktop-elrasosonico",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "appicons/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^12.0.5",
+    "electron-builder": "^22.10.5"
+  }
+}

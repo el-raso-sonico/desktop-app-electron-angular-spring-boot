@@ -1,0 +1,5 @@
+Pegar aquí el archivo .jar generado con Spring Boot y renombrarlo a "main.jar"
+
+Para instalar el .jar como servicio de Windows:
+1)Abrir una linea de comandos como administrador aquí y ejecutar el comando "WinSW.NET4.exe install". El servicio se instalará en Windows
+2)Configurar el arranque automático del servicio en "Servicios de Windows"
