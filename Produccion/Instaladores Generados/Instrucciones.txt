@@ -1,0 +1,14 @@
+Una vez generado el instalador con ElectronJS y Windows Service Wrapper crear aquí una carpeta con el nombre "Recursos"
+
+1)Copie dentro de la carpeta Recursos el contenido de Backend Como Servicio de Windows (Debe haber colocado su main.jar generado con sping)
+	-main.jar
+	-WinSW.NET4.exe
+	-WinSW.NET4.xml
+2)Copie dentro de la carpeta Recursos Copie win-ia32-unpacked generada al usar "npm run dist" en la aplicación electron
+	-win-ia32-unpacked
+4)El contenido de la carpeta Recursos debería ser el siguiente
+	-main.jar
+	-WinSW.NET4.exe
+	-WinSW.NET4.xml
+	-win-ia32-unpacked
+5)Abrir el archivo .iss con innosetup y generar el instalador
